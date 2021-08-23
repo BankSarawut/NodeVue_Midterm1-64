@@ -1,19 +1,16 @@
 <template>
 <div>
-    <h1>Edit User</h1>
-    <form v-on:submit.prevent = "editUser">
-        <p>name: <input type="text" v-model="user.name"></p>
-        <p>lastname: <input type="text" v-model="user.lastname"></p>
-        <p>email: <input type="text" v-model="user.email"></p>
-        <p>password: <input type="text" v-model="user.password"></p>
-        <p><button type="submit">edit user</button></p>
+    <h1>Edit product</h1>
+    <form v-on:submit.prevent = "editproduct">
+        <p>Namebrand: <input type="text" v-model="user.Namebrand"></p>
+        <p>Color: <input type="text" v-model="user. Color"></p>
+      
+        <p><button type="submit">edit product</button></p>
     </form>
     <hr>
     <div>
-        <p>name: {{user.name}}</p>
-        <p>lastname: {{user.lastname}}</p>
-        <p>email: {{user.email}}</p>
-        <p>password: {{user.password}}</p>
+        <p>Namebrand: {{user.Namebrand}}</p>
+        <p>Color {{user.Colore}}</p>
     </div>
 </div>
 </template>
@@ -23,10 +20,8 @@ export default {
     data(){
         return{
             user:{
-                name: '',
-                lastname: '',
-                email: '',
-                password: '',
+                Namebrand: '',
+                 Color: '',
                 status: 'active'
             }
         }
