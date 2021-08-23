@@ -4,7 +4,7 @@
     <form v-on:submit.prevent = "CreateProduct">
         <p>Namebrand <input type="text" v-model="user.Namebrand"></p>
         <p>Color: <input type="text" v-model="user.Colorl"></p>
-        <p><button type="submit">create user</button></p>
+        <p><button type="submit">createProduct</button></p>
     </form>
     <hr>
     <div>
